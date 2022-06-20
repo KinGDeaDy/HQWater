@@ -12,7 +12,7 @@ import numpy
 lock=Lock()
 worker = Sqlite3Worker("answers.db")
 
-db2 = sqlite3.connect("hqwater.db")
+db2 = sqlite3.connect("../Live Game/hqwater.db")
 cursor2 = db2.cursor()
 cursor2.execute("SELECT * FROM accounts")
 res = cursor2.fetchall()
